@@ -1,0 +1,130 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html, body {
+  height: 100% !important;
+}
+
+.head{
+  height: 100%;
+}
+
+.head .container{
+  height: 100% !important;
+}
+
+.pages{
+  height:100% !important;
+}
+
+#page1{
+
+}
+
+.top_blank{
+  height:80px;
+}
+
+.bottom_blank{
+  height:180px;
+}
+
+#introduce{
+  padding-top:20px;
+  padding-bottom:20px;
+  margin-bottom:80px;
+}
+
+#introduce_2{
+
+}
+
+.row .jumbotron{
+  height: 500px;
+}
+
+#more{
+  background-color: rgba(129,129,129,0.3);
+  padding-bottom:20px;
+}
+
+#more .container{
+  margin-top:100px;
+  margin-bottom: 100px;
+}
+
+#planning{
+  background-color: rgba(128,128,127,0.2);
+  padding-top:30px;
+  padding-bottom: 50px;
+}
+#more #progress{
+  opacity: 0;
+  transition: 0.4s;
+}
+#more .active{
+  opacity: 1 !important;
+  transition-delay: 0.5s;
+}
+
+#planning .container{
+  opacity: 0;
+  transition: 0.4s;
+}
+
+#planning .active{
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+#lang_python, #lang_R, #lang_c, #lang_PHP, #lang_cpp, #lang_java,
+#lang_mySQL, #lang_Csharp, #lang_JSquery, #lang_Android, #lang_HTMLCSS{
+  width: 0%;
+  transition: all ease 0s 1s;
+}
+
+.active #lang_python{
+  width: 50%;
+}
+
+.active #lang_c{
+  width: 95%;
+}
+
+.active #lang_java{
+  width: 40%;
+}
+
+.active #lang_HTMLCSS{
+  width: 60%;
+}
+
+.active #lang_JSquery{
+  width: 20%;
+}
+
+
+.active #lang_PHP{
+  width: 5%;
+}
+
+.active #lang_mySQL{
+  width: 1%;
+}
+
+.active #lang_Csharp{
+  width: 0%;
+}
+
+.active #lang_cpp{
+  width: 15%;
+}
+
+.active #lang_R{
+  width: 10%;
+}
+
+.active #lang_Android{
+  width: 10%;
+}

@@ -1,0 +1,16 @@
+날짜, 제목, 기간 ( 제목만 표시, 나머지 생략 )
+
+Model : CalendarModel
+- textField
+- Period
+- textField
+T
+- 
+V
+- ( CalendarModel Object 생성 )
+Object1 
+
+{{ object.dayNum }}
+{{ object.EventTitle }}
+{{ object.EventPeriod }}
+{{ object.EventDesc }}

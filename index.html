@@ -1,0 +1,665 @@
+﻿<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <script
+       src="http://code.jquery.com/jquery-3.4.1.js"
+       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+       crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css?ver=1">
+    <link rel="stylesheet" href="css/flat-ui.min.css?ver=1">
+    <link rel="stylesheet" href="css/custom.css?ver=1">
+    <link rel="stylesheet" href="css/animate.css?ver=1">
+    <link rel="stylesheet" href="css/typing.css?ver=1">
+    <link rel="stylesheet" href="css/calendar.css">
+    <script src="js/calendar.js" type="text/javascript"></script>
+
+    <!-- Naver map API -->
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=jr53hg6iyj"></script>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js" charset="utf-8"></script>
+
+    <!-- Font Awesome Icons -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title> Learn_BootStrap </title>
+
+    <style>
+      /*White Panel */
+      .white-panel {
+        text-align: center;
+        background: #ffffff;
+        padding-bottom: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      .white-panel .white-header {
+        background: #f3f3f3;
+        padding: 3px;
+        margin-bottom: 15px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+      }
+
+      .white-header{
+        font-size: 100px !important;
+        font-weight: bold;
+        font-style: unset;
+      }
+      .white-panel .small {
+        color: #ccd1d9;
+        font-size: 10px;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <div class="head" style="height:auto !important;">
+
+      <div class="row demo-row">
+        <div class="col">
+          <nav class="navbar navbar-inverse navbar-embossed navbar-expand-lg" role="navigation">
+            <a class="navbar-brand" href="#" style="margin-left:2%;">Khyst</a>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-01">
+
+              <ul class="nav navbar-nav leftEnd" style="float:right; margin-right:3%;">
+                <li class="dropdown" style="width:100%;">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu</a>
+                  <span class="dropdown-arrow"></span>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Introduce</a></li>
+                    <li><a href="#">location&majoring</a></li>
+                    <li><a href="#">learning state</a></li>
+                    <li><a href="#">planning</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">prevPage</a></li>
+                    <li><a href="#">nextPage</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">naver</a></li>
+                    <li><a href="#">github</a></li>
+                  </ul>
+                </li>
+               </ul>
+            </div><!-- /.navbar-collapse -->
+          </nav><!-- /navbar -->
+        </div>
+      </div> <!-- /row -->
+
+      <ul class="upperside_bar">
+        <li style=" width:30px; height:40px;" class="autoSet">
+          <a href="#FirstPage" class="list-group-item"> <i class="fas fa-2x fa-info-circle"></i> </a>
+        </li>
+        <li style=" width:auto; height:40px;" class="autoSet">
+          <a href="#introduce_2" class="list-group-item"> <i class="fas fa-2x fa-address-book text-center"></i> </a>
+        </li>
+        <li style=" width:auto; height:40px;" class="autoSet">
+          <a href="http://plan.khyst.co.kr:8000/plan/home" class="list-group-item"> <i class="fas fa-2x fa-chart-bar"></i> </a>
+        </li>
+        <li style=" width:auto; height:40px;" class="autoSet">
+          <a href="calendar.html" class="list-group-item"> <i class="fas fa-2x fa-calendar-alt"></i> </a>
+        </li>
+        <li style=" width:auto; height:40px;" class="autoSet">
+          <a href="#" class="list-group-item"> <i class="fas fa-2x fa-arrow-up"></i> </a>
+        </li>
+        <li style=" width:auto; height:40px;" class="autoSet">
+          <a href="#" class="list-group-item"> <i class="fas fa-2x fa-arrow-down"></i> </a>
+        </li>
+        <li>
+          <a href="#" class="list-group-item" style="background-color:#3b5998;"> <img src="img/fb.png" alt="" width="30px" height="30px"> </a>
+        </li>
+        <li>
+          <a href="#" class="list-group-item" style="background-color:#2DB400;"> <img src="img/naver.png" alt="" width="30px" height="30px"> </a>
+        </li>
+        <li>
+          <a href="#" class="list-group-item" style="background-color:#808080;"> <img src="img/github.png" alt="" width="30px" height="30px"> </a>
+        </li>
+        <li>
+
+        </li>
+      </ul>
+
+      <div class="top_blank" id="FirstPage"> </div>
+
+      <!--Intro Container-->
+      <div class="container wow fadeInDown" style="width : 90%;">
+        <div class="jumbotron" id="introduce">
+          <h1 class="text-center"> Hello, there? </h1>
+          <!-- <p class="typing-txt"> My name is Yonghun, Kim. </p> -->
+          <div class="typing-txt">
+            <ul>
+              <li> My name is Yonghun, Kim. </li>
+              <li> majoring in Computer Software Convergence </li>
+              <li> learning from Korea University at Sejong</li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <div class="col-4">
+            </div>
+            <div class="col-4">
+              <p class="text-center typing" style="height:30px;"> </p>
+            </div>
+            <div class="col-4">
+            </div>
+          </div>
+          <!-- <p class=" typing">  </p> -->
+
+          <hr class="divider my-4">
+
+          <table id="info_table">
+            <tr>
+              <td rowspan="5">
+                <h3 style=""> Studying University <hr> </h3>
+
+                <img src="img/crimson2positive.gif" alt="" width="100px" height="125px" style="opacity:0.7; z-index:-1">
+
+                <img src="img/kusejong_ui.png" alt="" width="100px" height="110px" style="margin: 15px 10px 15px 10px">
+                <h5> ( KoreaUniversity at Sejong ) </h5>
+              </td>
+
+              <td style="outline-offset: 5px;"> <p> &nbsp <span class="glyphicon glyphicon-book"> </span> </p></td>
+              <td> <p> &nbsp Field  </p> </td>
+              <td> <p> Computer Software Convergence </p> </td>
+            </tr>
+            <tr>
+              <td> <p> &nbsp <span class="glyphicon glyphicon-map-marker"></span> </p> </td>
+              <td> <p> &nbsp Address  </p> </td>
+              <td> <p> Chungcheongnam-do cheongyang-gun </p> </td>
+            </tr>
+            <tr>
+              <td> <p> &nbsp <span class="glyphicon glyphicon-phone"></span> </p> </td>
+              <td> <p> &nbsp Phone  </p> </td>
+              <td> <p> +82-10-4285-2242 </p> </td>
+            </tr>
+
+            <tr>
+              <td> <p> &nbsp <span class="glyphicon glyphicon-star"></span> </p> </td>
+              <td> <p> &nbsp Group </p> </td>
+              <td> <p> LikeLion_KUsejong </p> </td>
+            </tr>
+
+            <tr>
+              <td> <p> &nbsp <span class="fa fa-school"></span> </p> </td>
+              <td> <p> &nbsp High School </p> </td>
+              <td> <p> Korea Digital Media Highschool (Gyeongi-do, Ansan) </p> </td>
+            </tr>
+          </table>
+
+          <div id="info_contents" class="container">
+            <div style="text-align:center; margin-bottom: 20px">
+              <div class="row">
+                <img src="img/crimson2positive.gif" alt="" width="100px" height="125px" style="opacity:0.7; z-index:-1">
+                &nbsp
+                <img src="img/kusejong_ui.png" alt="" width="100px" height="110px" style="margin: 15px 10px 15px 10px">
+              </div>
+              <div class="row">
+                <h5> ( Korea University at Sejong Campus )</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <u> Field </u>
+              </div>
+              <div class="col-6">
+                <p> Computer Science </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <u> Country </u>
+              </div>
+              <div class="col-6">
+                <p> S.Korea </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <u> Phone Number </u>
+              </div>
+              <div class="col-6">
+                <p> +82-10-4285-2242 </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <u> Group </u>
+              </div>
+              <div class="col-6">
+                <p> Likelion_KUsejong </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                College
+              </div>
+              <div class="col-6">
+                <p> College of Science&Techonlogy (Korea University) </p>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <br>
+
+          <p class="text-center"><a href="#more" class="btn btn-primary btn-lg" role="button"> more about this </a></p>
+          <br>
+        </div>
+
+        <!-- <hr id="intersect" style="">
+        <div class="row" id="introduce_2">
+          <div class="col-sm-4 wow slideInLeft">
+            <div class="">
+              <p> Study L오후 4:20 2020-01-11anguage Now </p>
+              <div class="jumbotron" id="studying">
+                <h5 class="title"> Web </h5>
+                <p class="text">HTML, CSS, JS, django, Jquery, node.js, AWS</p>
+                <br>
+                <h5 class="title"> Algorithm </h5>
+                <p class="text">Dynamic, Divide and Conquer, Recursive structure, Data structre</p>
+                <br>
+                <h5 class="title"> System </h5>
+                <p class="text">C++, C#, Python, Java</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-8 wow slideInRight">
+            <p> Location (NAVER Maps) </p>
+            <div class="jumbotron">
+              <div id="map" style="width:100%;height:400px;"></div>
+
+              <script type="text/javascript">
+
+                  var mapOptions = {
+                    center : new naver.maps.LatLng(36.611144, 127.286864), zoom: 10
+                  };
+
+                  var map = new naver.maps.Map('map', mapOptions);
+
+                  var marker = new naver.maps.Marker({
+                    position: new naver.maps.LatLng(36.611144, 127.286864),
+                    map: map
+                  });
+
+              </script>
+          </div>
+        </div>
+        </div> -->
+      </div>
+
+    </div>
+
+    <!--Contents Container-->
+    <div class="container-fluid" id="more">
+      <div class="container" id="progress">
+        <h2> Programming Learning Progress </h2>
+        <hr>
+        <div style="margin-top: 30px;">
+          <div class="row pt-5 mb-5">
+            <div class="col-12 col-md-4 col-xl-5 offset-xl-1">
+
+              <div class="card rounded border-0 shadow-lg  mb-5">
+                <div class="card-body p-4">
+                  <p> C Language </p>
+                  <div class="progress">
+                    <div class="progress-bar" id="lang_c"> 95% </div>
+                  </div>
+                  <a href="#" >more detail <span class="more-arrow">&rarr;</span></a>
+                </div>
+              </div>
+              <br>
+
+              <div class="card rounded border-0 shadow-lg mb-5">
+                <div class="card-body p-4">
+                  <p> Java </p>
+                  <div class="progress">
+                    <div class="progress-bar b" id="lang_java"> 40% </div>
+                  </div>
+                  <a href="#" >more detail <span class="more-arrow">&rarr;</span></a>
+                </div>
+              </div>
+              <br>
+
+              <div class="card rounded border-0 shadow-lg">
+                <div class="card-body p-4">
+                  <p> Python </p>
+                  <div class="progress">
+                    <div class="progress-bar" id="lang_python"> 50% </div>
+                  </div>
+                  <a href="#" >more detail <span class="more-arrow">&rarr;</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-xl-5 pr-xl-3 pt-md-3">
+              <div class="card rounded border-0 shadow-lg  mb-5">
+                <div class="card-body p-4">
+                  <p> HTML/CSS </p>
+                  <div class="progress">
+                    <div class="progress-bar" id="lang_HTMLCSS"> 60% </div>
+                  </div>
+                  <a href="#" >more detail <span class="more-arrow">&rarr;</span></a>
+                </div>
+              </div>
+              <br>
+
+              <div class="card rounded border-0 shadow-lg mb-5">
+                <div class="card-body p-4">
+                  <p> Javascript/Jquery </p>
+                  <div class="progress">
+                    <div class="progress-bar b" id="lang_JSquery"> 20% </div>
+                  </div>
+                  <a href="#" >more detail <span class="more-arrow">&rarr;</span></a>
+                </div>
+              </div>
+              <br>
+
+              <div class="card rounded border-0 shadow-lg">
+                <div class="card-body p-4">
+                  <p> php </p>
+                  <div class="progress">
+                    <div class="progress-bar" id="lang_PHP"> 5% </div>
+                  </div>
+                  <a href="#" >more detail <span class="more-arrow">&rarr;</span></a>
+                </div>
+              </div>
+
+              <div class="card rounded border-0 shadow-lg">
+                <div class="card-body p-4">
+                  <p> mySQL </p>
+                  <div class="progress">
+                    <div class="progress-bar" id="lang_mySQL"> 1% </div>
+                  </div>
+                  <a href="#" >more detail <span class="more-arrow">&rarr;</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-xl-5 pr-xl-3 pt-md-3">
+              <div class="card rounded border-0 shadow-lg  mb-5">
+                <div class="card-body p-4">
+                  <p> C# </p>
+                  <div class="progress">
+                    <div class="progress-bar" id="lang_Csharp"> 0% </div>
+                  </div>
+                  <a href="#" >more detail <span class="more-arrow">&rarr;</span></a>
+                </div>
+              </div>
+              <br>
+            </div>
+
+            <div class="col-12 col-md-4 col-xl-5 pr-xl-3 pt-md-3">
+              <div class="card rounded border-0 shadow-lg  mb-5">
+                <div class="card-body p-4">
+                  <p> C++ </p>
+                  <div class="progress">
+                    <div class="progress-bar"  id="lang_cpp"> 20% </div>
+                  </div>
+                  <a href="#" >more detail <span class="more-arrow">&rarr;</span></a>
+                </div>
+              </div>
+              <br>
+
+              <div class="card rounded border-0 shadow-lg mb-5">
+                <div class="card-body p-4">
+                  <p> R language </p>
+                  <div class="progress">
+                    <div class="progress-bar b" id="lang_R"> 10% </div>
+                  </div>
+                  <a href="#" >more detail <span class="more-arrow">&rarr;</span></a>
+                </div>
+              </div>
+              <br>
+
+              <div class="card rounded border-0 shadow-lg">
+                <div class="card-body p-4">
+                  <p> Android </p>
+                  <div class="progress">
+                    <div class="progress-bar" id="lang_Android"> 10% </div>
+                  </div>
+                  <a href="#" >more detail <span class="more-arrow">&rarr;</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        var trigger = new ScrollTrigger({
+          toggle: {
+            visible: 'visibleClass',
+            hidden: 'hiddenClass'
+          },
+          offset: {
+            x: 0,
+            y: 10
+          },
+
+          addHeight: true,
+          once: true
+        }, document.body, window);
+      });</script>
+
+
+    <!-- Change Designs -->
+    <div class="container-fluid" id="planning">
+      <div class="container" id="planningCon" style="opacity: 1 !important;">
+<!-- ================================================================ -->
+        <div class="row">
+          <h2> Study </h2>
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+          <hr style="height:1px; border:none;color:#333; background-color:#333;">
+          <div class="col-lg-5 col-md-6">
+            <div class="white-panel pn" id="reach">
+              <div class="white-header">
+                <h5> Developing </h5>
+              </div>
+              <p> Python / <a style="color:red" href="class.likelion.org"> Django DRF </a> </p>
+              <p> <a style="color:red" href="class.likelion.org"> React Native </a> /  <a style="color:red" href ="edwith.org">Android Studio </a> </p>
+              <p> Raspberry Pi </p>
+	<br>
+	<br>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-lg-offset-2 col-md-6">
+            <div class="white-panel pn" id="reach">
+              <div class="white-header">
+                <h5> Design </h5>
+              </div>
+              <p> javascript / XML </p>
+              <p> (Adobe) Illustrator / Photoshop </p>
+              <p> (Adobe) Audition / Premier </p>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+        <br>
+
+        <div class="row">
+          <h2> Objective </h2>
+          <hr style="height:1px; border:none;color:#333; background-color:#333;">
+
+          <div class="col-lg-4 col-md-6">
+
+            <div class="white-panel pn" id="reach">
+
+              <div class="white-header">
+                <h5> Python Dev </h5>
+              </div>
+              <p> <a href="https://github.com/Khyst/basic_rank_calc/"> Calculating rank, grade </a> </p>
+              <p> <a href="http://khyst.herokuapp.com/portfolio"> KAKAO Friends WALLPAPER crawlling <a> </p>
+              <p> <a href="http://khyst.co.kr/Calendar.html"> School Schedule & Time Table Crawlling </a> </p>
+              <p> <a href="https://github.com/Khyst/Auto_Application"> Auto program for appling license test application </a> </p>
+              <p> Movie Time Table Crawlling </p>
+              <p> (OpenCV) Image File Crawlling </p>
+              <br>
+            </div>
+
+          	<div class="white-panel pn" id="reach">
+                        <div class="white-header">
+                          <h5> Artificial Inteligence(AI) Dev </h5>
+                        </div>
+          	    <p> Optical Cognitive Recognition (driver license recognition) </p>
+          	    <p> Bandwidth에 따른 목소리 변조 (stft, low-pass Chanel) </p>
+          	    <p> OpenCV를 이용한 사진속 정보 추출 </p>
+          	</div>
+
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="white-panel pn" id="make">
+              <div class="white-header">
+                <h5> Blog </h5>
+              </div>
+
+              <p> <a href="http://khyst.herokuapp.com/"> khyst.herokuapp.com </a></p>
+              <p> <a href="http://devkhyst.tistory.com/"> devkhyst.tistory.com </a> </p>
+              <p> <a href="http://blog.naver.com/kyh9432242/"> kyh9432242.naver.me </a></p>
+
+            </div>
+
+            <div class="white-panel pn" id="make">
+              <div class="white-header">
+                <h5> LikeLion Dev </h5>
+              </div>
+                <p> <a href="http://nolinestore.herokuapp.com"> Noline Store </a> </p>
+            	   <p> <a href="http://github.com/zeus0007/millionswebfront"> DRF axios & redux </a> </p>
+            	   <p> <a href="http://github.com/chanhohan/millions"> React.js MILLIONS </a> </p>
+                <p> <a href="http://github.com/chanhohan/millions_back"> DRF MILLIONS </a> </p>
+            </div>
+
+            <div class="white-panel pn" id="voca">
+              <div class="white-header">
+                <h5> Extra </h5>
+              </div>
+                <p> LikeLion 7th Course Completion </p>
+                <p> edwith Android Bootstrap Course Completion </p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="white-panel pn" id="make">
+              <div class="white-header">
+                <h5> Web developing </h5>
+              </div>
+
+              <p> <a href="http://khyst.herokuapp.com/"> khyst.herokuapp.com </a></p>
+              <p> <a href="http://devkhyst.tistory.com/"> devkhyst.tistory.com </a> </p>
+              <p> <a href="http://blog.naver.com/kyh9432242/"> kyh9432242.naver.me </a></p>
+
+            </div>
+
+            <div class="white-panel pn" id="make">
+              <div class="white-header">
+                <h5> LikeLion Dev </h5>
+              </div>
+                <p> <a href="http://nolinestore.herokuapp.com"> Noline Store </a> </p>
+                 <p> <a href="http://github.com/zeus0007/millionswebfront"> DRF axios & redux </a> </p>
+                 <p> <a href="http://github.com/chanhohan/millions"> React.js MILLIONS </a> </p>
+                <p> <a href="http://github.com/chanhohan/millions_back"> DRF MILLIONS </a> </p>
+            </div>
+
+            <div class="white-panel pn" id="voca">
+              <div class="white-header">
+                <h5> Extra </h5>
+              </div>
+                <p> LikeLion 7th Course Completion </p>
+                <p> edwith Android Bootstrap Course Completion </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      </div>
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+    </div>
+
+    <footer style="color: #000001">
+      <div class="container">
+        <br>
+        <div class="row">
+          <div class="col-sm-2" style="text-align: center;">
+            <h5> Copyright &copy; 2019 </h5>
+            <h5> yonghun, Kim </h5>
+            <p> Computer Engineering </p>
+            <p> College Student 1 grade </p>
+          </div>
+
+          <div class="col-sm-4" style="text-align: center">
+            http://kyh9432242.blog.me
+            https://medium.com/@kyh48752242
+            https://devkhyst.tistory.com/
+            http://khyst.herokuapp.com
+          </div>
+          <div class="col-sm-4">
+            <h4 style="text-align:center"> SNS </h4>
+            <div class="list-group" id="SNS">
+              <a href="#" class="list-group-item" style="background-color:#3b5998;"> <img src="img/fb.png" alt="" width="20px" height="20px"> &nbsp Facebook &nbsp / &nbsp kyh9432242@naver.com  </a>
+              <a href="http://blog.naver.com/kyh9432242" class="list-group-item" style="background-color:#2DB400;"> <img src="img/naver.png" alt="" width="20px" height="20px"> &nbsp Naver &nbsp / &nbsp kyh9432242@naver.com </a>
+              <a href="http://github.com/khyst" class="list-group-item" style="background-color:#808080;"> <img src="img/github.png" alt="" width="20px" height="20px"> &nbsp Github &nbsp / &nbsp github.com/khyst </a>
+            </div>
+          </div>
+          <div class="col-sm-2" id="summaryLink">
+            <h4 style=""> 관련 링크</h4>
+            <ul>
+              <li>
+                <a href="http://khyst.herokuaupp.com"> <strong> 웹 블로그 </strong> </a>
+              </li>
+              <li>
+                <a href="http://kyh9432242.blog.me"> <strong> 네이버 블로그 </strong> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="dist/wow.js"></script>
+    <script>new WOW().init();</script>
+    <script src="js/progressBar.js?ver=1"></script>
+    <script type="text/javascript" src="js/scrolling.js?ver=1"></script>
+    <script type="text/javascript" src="js/typing.js?ver=1"></script>
+    <script src="js/ScrollTrigger.js"></script>
+    <script src="js/flat-ui.js"></script>
+    <script src="js/application.js"></script>
+  </body>
+
+</html>

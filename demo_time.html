@@ -1,0 +1,53 @@
+<p id="timezones"></p>
+<input type="button" id="execute" value="execute" />
+<script>
+document.querySelector('input').addEventListener('click', function(event){
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', './time.php');
+    console.log(xhr);
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState === 4 && xhr.status === 200){
+            var _tzs = xhr.responseText;
+            var tzs = JSON.parse(_tzs);
+            // 서버에서 전송한 JSON 데이터를
+            // Javascript Object로 변환
+
+            var _str = '';
+
+            for(var i = 0; i< tzs.length; i++){
+                _str += '<li>'+tzs[i]+'</li>';
+            }
+
+            _str = '<ul>'+_str+'</ul>';
+            document.querySelector('#timezones').innerHTML = _str;
+        }
+    }
+    xhr.send(); 
+}); 
+</script>
+
+{% comment %} Transfer Data to Server from Client(Browser) {% endcomment %}
+<p> time : <span id="time"> </span> </p>
+
+<select id="timezone">
+    <option value="Asia/Seoul"> 아시아 (서울) </option>
+    <option value="America/New_York"> 아메리카 (뉴욕) </option>
+</select>
+
+<input type="button" id="execute" value="execute" />
+
+<script>
+document.querySelector('input').addEventListener('click', function(event){
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', './time3.php');
+    xhr.onreadystatechange = function(){
+        document.querySelector('#time').innerHTML = xhr.responseText;
+    }
+    var data = new Object();
+    data.timezone = document.querySelector('#timezone').value;
+    data.format = document.querySelector('#format').value;
+    xhr.setRequestHeader("Content-type", "application/json");
+
+    xhr.send(JSON.stringfy(data)); //xhr Transfer
+});
+</script>

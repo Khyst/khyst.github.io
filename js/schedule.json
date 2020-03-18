@@ -1,0 +1,29 @@
+// Schedule Database
+
+{
+  "count":4,
+
+  "rows": [
+    {
+      "id":1,
+      "title":"",
+      "description":"",
+      "index":"",   // day에 들어갈 번호 ("1~42")
+      "class":"KU-Schedule" // class변경의 키
+    },
+    {
+      "id":2,
+      "title":"",
+      "description":"",
+      "index":"",
+      "class":"User-Schedule"
+    },
+    {
+      "id":3,
+      "title":"",
+      "description":"",
+      "index":"",
+      "class":"K-Schedule"
+    }
+  ]
+}

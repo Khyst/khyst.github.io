@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="javascript" href="upload_js.js">
+    <script src='//code.jquery.com/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js'></script>
+
+    <title>Downloads link</title>
+  </head>
+    <body>
+    
+     <h4> ------------------------------------------ </h4>
+        <span id="Content"><p><a href="http://khyst.co.kr/KoreaUniv/network.pdf" download> 정보 통신 교재 </a></p></span>
+        <span id="Content"><p><a href="http://khyst.co.kr/KoreaUniv/network1.pdf" download> 정보 통신 교재 (1part) </a></p></span>
+        <span id="Content"><p><a href="http://khyst.co.kr/KoreaUniv/dormitel_KU.pdf" download> 기숙사 납입 확인서 </a></p></span>
+        <span id="Content"><p><a href="http://khyst.co.kr/KoreaUniv/ep_2.pdf" download> 일반 물리학 실험 1차 실험 </a></p></span>
+        <span id="Content"><p><a href="http://khyst.co.kr/KoreaUniv/Algorithm_basic(recursive).pdf" download> 알고리즘 공부 교재 </a></p></span>
+        <span id="Content"><p><a href="http://khyst.co.kr/KoreaUniv/comlang_1.pdf" download> 컴언어 1차 (필기)과제 </a></p></span>
+        <span id="Content"><p><a href="http://khyst.co.kr/KoreaUniv/ep3_img.hwp" download> 일반 물리학 실험3 이미지 파일 </a></p></span>
+        <span id="Content"><p><a href="http://sejongjwizard.korea.ac.kr/user/boardList.action?command=view&boardId=3259881&boardSeq=3296154"> 일반 물리학 실험 hwp 파일 링크 </a></p></span>
+        <span id="Content"><p><a href="http://khyst.co.kr/KoreaUniv/Chap-1.pdf" download> 정보 통신 Slide (1part) </a></p></span>
+        <span id="Content"><p><a href="http://khyst.co.kr/KoreaUniv/Chap-2.pdf" download> 정보 통신 Slide (2part) </a></p></span>
+        <span id="Content"><p><a href="http://khyst.co.kr/KoreaUniv/Chap-3.pdf" download> 정보 통신 Slide (3part) </a></p></span>
+        <span id="Content"><p><a href="http://khyst.co.kr/KoreaUniv/Chap-4.pdf" download> 정보 통신 Slide (4part) </a></p></span>
+        <span id="Content"><p><a href="http://khyst.co.kr/KoreaUniv/ep_5.pdf" download> 정보 통신 Slide (4part) </a></p></span>
+        <span id="Content"><p><a href="http://khyst.co.kr/KoreaUniv/ep_5s.pdf" download> 정보 통신 Slide (4part) </a></p></span>
+        <span id="Content"><p><a href="http://khyst.co.kr/KoreaUniv/GC_2017.pdf" download> 2017 Calculus</a></p></span>
+        <span id="Content"><p><a href="http://khyst.co.kr/KoreaUniv/GC_2018.pdf" download> 2018 Calculus </a></p></span>
+
+        <div class="" id="field">
+        </div>
+      <h4> ------------------------------------------ </h4>
+
+    <form id="dataForm" method="POST" action="upload.php" enctype="multipart/form-data">
+      <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+      <input name="userfile" type="file" />
+      <input type="submit" value="upload" />
+    </form>
+
+    <form class="" action="index.html" method="post">
+      <button type="button" name="button">index로 돌아가기</button>
+    </form>
+  </body>
+</html>
