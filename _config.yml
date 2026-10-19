@@ -1,0 +1,16 @@
+title: Yonghun Kim | Robotics Engineer
+description: 김용훈의 로보틱스 연구 및 프로젝트 포트폴리오
+url: "https://khyst.github.io"
+baseurl: ""
+exclude:
+  - PROMPT.md
+  - diagram
+  - tmp
+  - README.md
+  - REVIEW.md
+  - scripts
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
