@@ -1,40 +1,32 @@
-<!doctype html>
+---
+# GitHub Pages renders the section files in _includes/.
+---
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="김용훈의 로보틱스 포트폴리오. 모바일 휴머노이드, 원격조작, 인지와 모션 계획, 로봇 시스템 통합.">
-  <meta name="theme-color" content="#0b1216">
-  <title>김용훈 · Robotics Engineer</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <script src="assets/app.js" defer></script>
-</head>
-<body>
-<a class="skip" href="#main">본문으로 건너뛰기</a>
-<header class="site-header"><nav aria-label="주요 메뉴"><a href="#research">Research</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#academic">Academic</a><a href="mailto:kyh9432242@korea.ac.kr">Contact ↗</a></nav></header>
-<main id="main">
-<section id="home" class="hero wrap">
-  <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> ROBOTICS ENGINEER · RESEARCH ASPIRANT</p><h1>김용훈<span>Yonghun Kim</span></h1><div class="actions"><a class="button primary" href="#projects">프로젝트 살펴보기 <span>↘</span></a><a class="button" href="reference/curriculum_viate_kimyonghun.pdf" target="_blank" rel="noopener">CV 보기 ↗</a><a class="text-link" href="https://github.com/khyst" target="_blank" rel="noopener">GitHub ↗</a><a class="text-link" href="https://www.linkedin.com/in/khy-kim-456814429/" target="_blank" rel="noopener">LinkedIn ↗</a></div></div>
-  <figure class="portrait"><div class="portrait-frame"><img src="images/figure.jpg" alt="김용훈 프로필 사진" fetchpriority="high"></div><figcaption><span>ENGINEERING → RESEARCH</span><span>인지 · 계획 · 제어</span></figcaption></figure>
-  <div class="hero-foot"><span>INTELLIGENT & AUTONOMOUS ROBOTIC SYSTEMS</span><a href="#research">SCROLL TO EXPLORE ↓</a></div>
-</section>
-<section id="research" class="section wrap"><div class="section-top"><p class="eyebrow">01 / RESEARCH INTERESTS</p></div><div class="research-statement"><p>Physical Ai 기반의 지능형 Robotics 기술이 다양한 현장에서 안정적이고 지속적으로 사용될 수 있도록 로봇의 일반화 지능을 개선하는 연구를 하고자 합니다.</p></div><div class="research-grid"><article><span class="index">01</span><h3>언어와 행동의 연결</h3><p class="english">VLM / VLA-based<br>Task and Motion Planning</p><p>사람의 의도와 장면의 의미를 이해하고, 실행 가능한 작업·모션 계획으로 연결하는 방법에 관심이 있습니다.</p></article><article><span class="index">02</span><h3>정교한 물체 조작</h3><p class="english">Robotic Manipulation<br>& Object Grasping</p><p>물체의 자세와 조작 목적을 함께 고려해, 다양한 대상과 작업에 대응하는 파지·조작 지능을 탐구하고자 합니다.</p></article><article><span class="index">03</span><h3>효율적인 학습과 적응</h3><p class="english">Data-efficient Learning<br>for Robotics</p><p>고충실도 시뮬레이션과 Sim-to-Real, Domain Adaptation을 활용해 실세계 데이터 수집 부담을 줄이는 방향에 관심이 있습니다.</p></article></div></section>
-<section id="experience" class="section section-tint"><div class="wrap"><p class="eyebrow">02 / EXPERIENCE & EDUCATION</p><div class="experience-grid"><div><p class="section-intro">로봇 플랫폼의 소프트웨어 개발부터<br>실제 하드웨어와의 통합까지.</p></div><div class="timeline"><article><p class="date">2025.01 — 현재 <span>(2026.10 종료 예정)</span></p><h3>Research Engineer</h3><p class="organization">RASTECH · 로봇연구소</p><p>모바일 휴머노이드의 인지·작업 및 모션 계획·제어 파이프라인 개발. 이기종 로봇의 실시간 통신과 텔레메트리 백엔드 구축.</p></article><article><p class="date">2023.09 — 2024.12</p><h3>학부연구생</h3><p class="organization">고려대학교 세종캠퍼스 · 네트워크관리연구실</p><p>자율주행 차량의 전역 경로 계획을 시각화하는 GUI 개발.</p></article><article><p class="date">2022.03 — 2023.03 <span>(CV 기준)</span></p><h3>학부연구생</h3><p class="organization">고려대학교 세종캠퍼스 · 인공지능시스템연구실</p><p>시각장애인을 위한 음성 기반 실내 안내 로봇 개발.</p></article><article><p class="date">2019.03 — 2025.02</p><h3>컴퓨터융합소프트웨어학과 학사</h3><p class="organization">고려대학교 세종캠퍼스</p><p>전체 평점 4.21 / 4.50 · 전공 평점 4.36 / 4.50 · 최우등 졸업</p></article></div></div><div class="skills"><div><h4>ROBOTICS</h4><p>ROS 2 · MoveIt 2 · ros2_control · Gazebo · Isaac Sim · DORA</p></div><div><h4>PROGRAMMING & SYSTEMS</h4><p>Python · C++ · Docker · FastAPI · Flask · PyQt5</p></div><div><h4>AI & INTEGRATION</h4><p>FoundationPose · RT-DETR · RAG · LangChain · Tool Calling</p></div></div></div></section>
-<section id="projects" class="section wrap"><div class="section-top"><p class="eyebrow">03 / SELECTED PROJECTS</p></div>
-<article class="project" id="manipulation"><header class="project-heading"><div><span class="index">01 / PERCEPTION & MANIPULATION</span><p class="date">2026.02 — 진행 중 (CV 기준)</p></div><div><h3>38-DoF 양팔 모바일 휴머노이드 물체 조작 시스템</h3><p>객체 탐지와 6D 자세 추정, 모션 계획과 액추에이터 제어를 연결한 작업 수행 파이프라인.</p></div></header><div class="project-body"><div><ul class="features"><li><strong>인지부터 실행까지</strong>RT-DETR과 FoundationPose를 MoveIt 2에 연결해 물체 파지·조작 워크플로 구축.</li><li><strong>하드웨어 모델링과 제어</strong>CAD 기반 URDF/SRDF 모델링, ros2_control 하드웨어 인터페이스 및 CAN-FD 연동.</li><li><strong>시뮬레이션과 데이터</strong>Gazebo·Isaac Sim 환경 구성 및 OWL-ViT 기반 자동 라벨링 파이프라인 개발.</li></ul><aside class="research-question"><span>RESEARCH QUESTION</span><p>“물병 뚜껑을 열어 줘”라는 의도를 이해한다면, 물체 전체를 넘어 작업에 필요한 부위의 자세와 조작 방법까지 추론할 수 있을까?</p></aside><div class="tags"><span>ROS 2</span><span>MoveIt 2</span><span>FoundationPose</span><span>RT-DETR</span></div></div><figure class="media"><video controls preload="none" playsinline aria-label="양팔 휴머노이드 물체 파지 및 이동 데모"><source src="videos/demo_pick_n_place_fast.mp4" type="video/mp4">이 브라우저는 동영상 재생을 지원하지 않습니다. <a href="videos/demo_pick_n_place_fast.mp4">영상 다운로드</a></video><figcaption>DEMO 01 <span>물체 파지 및 이동</span></figcaption></figure></div></article>
-<article class="project" id="teleoperation"><header class="project-heading"><div><span class="index">02 / TELEOPERATION</span><p class="date">2026.03 — 2026.09</p></div><div><h3>모바일 휴머노이드 원격조작 프레임워크</h3><p>Meta Quest 3와 DORA.rs를 활용한 로봇 팔·손 원격조작 데이터 파이프라인.</p></div></header><div class="project-body"><div><ul class="features"><li><strong>직관적인 원격조작</strong>Meta Quest 3를 이용해 7-DoF 팔과 10-DoF 손을 제어하는 실시간 파이프라인 설계.</li><li><strong>데이터 흐름 구성</strong>DORA.rs 기반으로 입력 장치와 로봇 제어를 연결하고 실시간 조작 시스템 통합.</li></ul><aside class="research-question"><span>RESEARCH QUESTION</span><p>사람마다 다른 관절 특성을 비전으로 추정하고 반영하면, 여러 사용자가 더 쉽게 원격조작 데이터를 수집할 수 있을까?</p></aside><div class="tags"><span>Meta Quest 3</span><span>DORA.rs</span><span>Teleoperation</span></div></div><figure class="media"><video controls preload="none" playsinline aria-label="DORA OpenArm 원격조작 데모"><source src="videos/dora_openarm_teleop_demo_10_13.mp4" type="video/mp4">영상 재생을 지원하지 않습니다. <a href="videos/dora_openarm_teleop_demo_10_13.mp4">영상 다운로드</a></video><figcaption>DEMO 02 <span>OpenArm 원격조작</span></figcaption></figure></div></article>
-<article class="project" id="gesture"><header class="project-heading"><div><span class="index">03 / HUMAN–ROBOT INTERACTION</span></div><div><h3>단안 카메라 기반 제스처 인식 및 로봇 연동</h3><p>웹캠의 상체 키포인트와 기하학적 관절 추정으로 사람의 제스처를 로봇에 전달하는 시스템.</p></div></header><div class="project-body"><div><ul class="features"><li><strong>자세 인식과 기하학적 모델링</strong>YOLOv10-Pose의 2D 키포인트를 바탕으로 상체 자세와 관절 관계 계산.</li><li><strong>제스처에서 로봇 모션으로</strong>규칙 기반 FSM으로 제스처를 판별하고 대응하는 로봇 모션과 연동.</li><li><strong>소프트웨어 저작권 등록</strong>등록번호 C-2025-057838.</li></ul><aside class="research-question"><span>RESEARCH QUESTION</span><p>팔 길이와 카메라 시야각에 따라 달라지는 인식 정확도를, 신체 비율과 시점 변화에 강인한 모델로 개선할 수 있을까?</p></aside><div class="tags"><span>YOLOv10-Pose</span><span>Geometry</span><span>Gesture FSM</span></div></div><div><figure class="media"><video controls preload="none" playsinline aria-label="카메라 기반 제스처 인식 데모"><source src="videos/consultant_webcam.mp4" type="video/mp4">영상 재생을 지원하지 않습니다.</video><figcaption>DEMO 03 <span>웹캠 제스처 인식</span></figcaption></figure><details class="extra-media"><summary>로봇 연동 영상 보기</summary><video controls preload="none" playsinline aria-label="인식한 제스처의 로봇 연동 데모"><source src="videos/consultant_robot.mp4" type="video/mp4"></video></details></div></div></article>
-<article class="project" id="character"><header class="project-heading"><div><span class="index">04 / ROBOT MOTION & LLM</span><p class="date">모션 2025.03 — 12 · LLM 2025.07 — 12</p></div><div><h3>캐릭터 로봇 모션 제어 및 LLM 상호작용</h3><p>캐릭터 로봇의 기구학 모델, 서보 제어, 인터랙티브 모션과 지식 기반 대화 기능 개발.</p></div></header><div class="project-body"><div><ul class="features"><li><strong>캐릭터를 움직이는 제어 시스템</strong>꿈돌이·꿈순이 CAD 기반 URDF/SRDF 구성과 Dynamixel·ros2_control 제어 연동.</li><li><strong>지식과 도구를 사용하는 대화</strong>RAG 기반 검색과 외부 API Tool Calling을 통해 로봇 서비스 기능 연결.</li><li><strong>구조화된 명령 검증</strong>Pydantic 검증 계층을 통해 LLM 출력을 로봇 제어용 명령으로 변환·검증.</li></ul><aside class="research-question"><span>RESEARCH QUESTION</span><p>캐릭터의 배경 지식과 페르소나를 기억하는 대화 에이전트가, 모션과 서비스를 함께 활용해 더 자연스럽게 상호작용할 수 있을까?</p></aside><div class="tags"><span>ros2_control</span><span>Dynamixel</span><span>RAG</span><span>Tool Calling</span></div></div><figure class="media"><video controls preload="none" playsinline aria-label="꿈돌이 캐릭터 로봇 모션 데모"><source src="videos/kumdori_demo.mp4" type="video/mp4">영상 재생을 지원하지 않습니다.</video><figcaption>DEMO 04 <span>캐릭터 로봇 모션 · 대화 기능 시연은 포함하지 않음</span></figcaption></figure></div></article>
-<div class="other-projects"><article><span class="index">05 / ROBOT SOFTWARE INFRASTRUCTURE</span><h3>이기종 로봇 통합 텔레메트리 백엔드</h3><p class="date">2025.04 — 2026.09</p><p>다양한 로봇의 센서·상태 정보를 표준화하고 제어 명령을 전달하는 비동기 FastAPI 백엔드. Vue–FastAPI–ROS 2 사이를 WebSocket으로 연결해 로봇 관리와 데이터 통합을 지원했습니다.</p><div class="pipeline" aria-label="시스템 데이터 흐름"><span>Web UI</span><b>↔</b><span>FastAPI<br>WebSocket</span><b>↔</b><span>ROS 2<br>Robot fleet</span></div><div class="tags"><span>FastAPI</span><span>WebSocket</span><span>ROS 2</span><span>Docker</span></div></article><article><span class="index">06 / AUTONOMOUS DRIVING & VISUALIZATION</span><h3>HD-Map 기반 전역 경로 계획 GUI</h3><p class="date">2025.02 — 2025.12 (CV 기준)</p><p>Lanelet2 HD-Map을 파싱하고, 여러 자율주행 청소 차량의 전역 경로를 시각화·디버깅하는 PyQt5 크로스플랫폼 GUI. Kakao Maps API와 HTML/JS 지도를 통합했습니다.</p><button class="gif-load" data-src="videos/path%20plan%20gpp_demo.gif" type="button">▷ 경로 계획 데모 불러오기 <small>GIF · 약 60 MB · 클릭 시 로드</small></button><div class="tags"><span>Lanelet2</span><span>PyQt5</span><span>Kakao Maps API</span></div></article></div>
-</section>
-<section id="academic" class="section section-tint"><div class="wrap"><p class="eyebrow">04 / ACADEMIC RECORD</p><div class="academic-grid"><div><h3>학업 성적</h3><div class="grades"><div><strong>4.21<small> / 4.50</small></strong><p>전체 평점</p></div><div><strong>4.36<small> / 4.50</small></strong><p>전공 평점</p></div></div><p>고려대학교 세종캠퍼스 · 컴퓨터융합소프트웨어학과<br>최우등 졸업 (Great Honored Student)</p><h3 class="subhead">논문</h3><p class="publication">Y. Jang, J. Choi, <strong>Y. Kim</strong>, J. Park and M. Kim.<br>“Pre-processing Trends in Public Datasets for Application Traffic Classification.”<br><span>2024 KICS Winter Conference, pp. 1054–1055.</span></p></div><div><h3>수상 및 활동</h3><ul class="record-list">
-<li class="activity-highlight"><time>2023</time><strong>국가 이공계 우수 장학생</strong><span>과학기술정보통신부 · 전액 장학금</span></li>
-<li class="activity-highlight"><time>2027</time><strong>AI Robotics KR 운영 매니저</strong><span>AI Robotics KR (AIRK)</span></li>
-<li class="activity-highlight"><time>2024</time><strong>Newsweek 영어 학술 동아리 · 회장·부회장</strong><span>Korea University, Sejong</span></li>
-
-<li><time>2023</time><strong>KT 자율주행 부트캠프 경진대회 1위</strong><span>KT × DSC 공유대학</span></li>
-
-
-</ul></div></div><div class="academic-bottom academic-bottom-two"><div><h4>LEARNING</h4><p>서울대학교 K-MOOC<br>‘미래를 열어가는 로봇 신기술 및 응용 III’ 수료 · 2026</p></div><div><h4>LANGUAGES</h4><p>TOEIC 885 / 990<br>TEPS 339 / 600</p></div></div></div></section>
-</main><footer class="wrap"><span>© <span id="year">2026</span> Yonghun Kim</span><span>Built with curiosity. Grounded in robotics.</span><a href="#home">맨 위로 ↑</a></footer>
-</body></html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="김용훈의 로보틱스 포트폴리오. 모바일 휴머노이드, 원격조작, 인지와 모션 계획, 로봇 시스템 통합." name="description"/>
+    <meta content="#fafbf8" name="theme-color"/>
+    <title>
+      김용훈 · Robotics Engineer
+    </title>
+    <link href="assets/style.css" rel="stylesheet"/>
+    <script defer="" src="assets/app.js">
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">
+      본문으로 건너뛰기
+    </a>
+    {% include header.html %}
+    <main id="main">
+      {% include sections/home.html %}
+      {% include sections/research.html %}
+      {% include sections/experience.html %}
+      {% include sections/projects.html %}
+      {% include sections/academic.html %}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

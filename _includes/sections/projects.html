@@ -1,0 +1,93 @@
+<section class="section wrap" id="projects">
+  <div class="section-top">
+    <p class="eyebrow">
+      03 / SELECTED PROJECTS
+    </p>
+  </div>
+  {% include projects/manipulation.html %}
+  {% include projects/teleoperation.html %}
+  {% include projects/gesture.html %}
+  {% include projects/character.html %}
+  <div class="other-projects">
+    <article>
+      <span class="index">
+        05 / ROBOT SOFTWARE INFRASTRUCTURE
+      </span>
+      <h3>
+        이기종 로봇 통합 텔레메트리 백엔드
+      </h3>
+      <p class="date">
+        2025.04 — 2026.09
+      </p>
+      <p>
+        다양한 로봇의 센서·상태 정보를 표준화하고 제어 명령을 전달하는 비동기 FastAPI 백엔드. Vue–FastAPI–ROS 2 사이를 WebSocket으로 연결해 로봇 관리와 데이터 통합을 지원했습니다.
+      </p>
+      <div aria-label="시스템 데이터 흐름" class="pipeline">
+        <span>
+          Web UI
+        </span>
+        <b>
+          ↔
+        </b>
+        <span>
+          FastAPI
+          <br/>
+          WebSocket
+        </span>
+        <b>
+          ↔
+        </b>
+        <span>
+          ROS 2
+          <br/>
+          Robot fleet
+        </span>
+      </div>
+      <div class="tags">
+        <span>
+          FastAPI
+        </span>
+        <span>
+          WebSocket
+        </span>
+        <span>
+          ROS 2
+        </span>
+        <span>
+          Docker
+        </span>
+      </div>
+    </article>
+    <article>
+      <span class="index">
+        06 / AUTONOMOUS DRIVING &amp; VISUALIZATION
+      </span>
+      <h3>
+        HD-Map 기반 전역 경로 계획 GUI
+      </h3>
+      <p class="date">
+        2025.02 — 2025.12 (CV 기준)
+      </p>
+      <p>
+        Lanelet2 HD-Map을 파싱하고, 여러 자율주행 청소 차량의 전역 경로를 시각화·디버깅하는 PyQt5 크로스플랫폼 GUI. Kakao Maps API와 HTML/JS 지도를 통합했습니다.
+      </p>
+      <button class="gif-load" data-src="videos/path%20plan%20gpp_demo.gif" type="button">
+        ▷ 경로 계획 데모 불러오기
+        <small>
+          GIF · 약 60 MB · 클릭 시 로드
+        </small>
+      </button>
+      <div class="tags">
+        <span>
+          Lanelet2
+        </span>
+        <span>
+          PyQt5
+        </span>
+        <span>
+          Kakao Maps API
+        </span>
+      </div>
+    </article>
+  </div>
+</section>

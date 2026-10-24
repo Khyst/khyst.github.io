@@ -1,0 +1,82 @@
+<article class="project" id="gesture">
+  <header class="project-heading">
+    <div>
+      <span class="index">
+        03 / HUMAN–ROBOT INTERACTION
+      </span>
+    </div>
+    <div>
+      <h3>
+        단안 카메라 기반 제스처 인식 및 로봇 연동
+      </h3>
+      <p>
+        웹캠의 상체 키포인트와 기하학적 관절 추정으로 사람의 제스처를 로봇에 전달하는 시스템.
+      </p>
+    </div>
+  </header>
+  <div class="project-body">
+    <div>
+      <ul class="features">
+        <li>
+          <strong>
+            자세 인식과 기하학적 모델링
+          </strong>
+          YOLOv10-Pose의 2D 키포인트를 바탕으로 상체 자세와 관절 관계 계산.
+        </li>
+        <li>
+          <strong>
+            제스처에서 로봇 모션으로
+          </strong>
+          규칙 기반 FSM으로 제스처를 판별하고 대응하는 로봇 모션과 연동.
+        </li>
+        <li>
+          <strong>
+            소프트웨어 저작권 등록
+          </strong>
+          등록번호 C-2025-057838.
+        </li>
+      </ul>
+      <aside class="research-question">
+        <span>
+          RESEARCH QUESTION
+        </span>
+        <p>
+          팔 길이와 카메라 시야각에 따라 달라지는 인식 정확도를, 신체 비율과 시점 변화에 강인한 모델로 개선할 수 있을까?
+        </p>
+      </aside>
+      <div class="tags">
+        <span>
+          YOLOv10-Pose
+        </span>
+        <span>
+          Geometry
+        </span>
+        <span>
+          Gesture FSM
+        </span>
+      </div>
+    </div>
+    <div>
+      <figure class="media">
+        <video aria-label="카메라 기반 제스처 인식 데모" controls="" playsinline="" preload="none">
+          <source src="videos/consultant_webcam.mp4" type="video/mp4"/>
+          영상 재생을 지원하지 않습니다.
+        </video>
+        <figcaption>
+          DEMO 03
+          <span>
+            웹캠 제스처 인식
+          </span>
+        </figcaption>
+      </figure>
+      <details class="extra-media">
+        <summary>
+          로봇 연동 영상 보기
+        </summary>
+        <video aria-label="인식한 제스처의 로봇 연동 데모" controls="" playsinline="" preload="none">
+          <source src="videos/consultant_robot.mp4" type="video/mp4"/>
+        </video>
+      </details>
+    </div>
+  </div>
+</article>

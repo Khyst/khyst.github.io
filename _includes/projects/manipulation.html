@@ -1,0 +1,81 @@
+<article class="project" id="manipulation">
+  <header class="project-heading">
+    <div>
+      <span class="index">
+        01 / PERCEPTION &amp; MANIPULATION
+      </span>
+      <p class="date">
+        2026.02 — 진행 중 (CV 기준)
+      </p>
+    </div>
+    <div>
+      <h3>
+        38-DoF 양팔 모바일 휴머노이드 물체 조작 시스템
+      </h3>
+      <p>
+        객체 탐지와 6D 자세 추정, 모션 계획과 액추에이터 제어를 연결한 작업 수행 파이프라인.
+      </p>
+    </div>
+  </header>
+  <div class="project-body">
+    <div>
+      <ul class="features">
+        <li>
+          <strong>
+            인지부터 실행까지
+          </strong>
+          RT-DETR과 FoundationPose를 MoveIt 2에 연결해 물체 파지·조작 워크플로 구축.
+        </li>
+        <li>
+          <strong>
+            하드웨어 모델링과 제어
+          </strong>
+          CAD 기반 URDF/SRDF 모델링, ros2_control 하드웨어 인터페이스 및 CAN-FD 연동.
+        </li>
+        <li>
+          <strong>
+            시뮬레이션과 데이터
+          </strong>
+          Gazebo·Isaac Sim 환경 구성 및 OWL-ViT 기반 자동 라벨링 파이프라인 개발.
+        </li>
+      </ul>
+      <aside class="research-question">
+        <span>
+          RESEARCH QUESTION
+        </span>
+        <p>
+          “물병 뚜껑을 열어 줘”라는 의도를 이해한다면, 물체 전체를 넘어 작업에 필요한 부위의 자세와 조작 방법까지 추론할 수 있을까?
+        </p>
+      </aside>
+      <div class="tags">
+        <span>
+          ROS 2
+        </span>
+        <span>
+          MoveIt 2
+        </span>
+        <span>
+          FoundationPose
+        </span>
+        <span>
+          RT-DETR
+        </span>
+      </div>
+    </div>
+    <figure class="media">
+      <video aria-label="양팔 휴머노이드 물체 파지 및 이동 데모" controls="" playsinline="" preload="none">
+        <source src="videos/demo_pick_n_place_fast.mp4" type="video/mp4"/>
+        이 브라우저는 동영상 재생을 지원하지 않습니다.
+        <a href="videos/demo_pick_n_place_fast.mp4">
+          영상 다운로드
+        </a>
+      </video>
+      <figcaption>
+        DEMO 01
+        <span>
+          물체 파지 및 이동
+        </span>
+      </figcaption>
+    </figure>
+  </div>
+</article>
