@@ -48,7 +48,8 @@ nav { display: flex; flex-wrap: wrap; gap: 24px; font-size: 12px; }
 
 /* Selected projects: each main project lives in _includes/projects/. */
 .project { padding: 38px 0 45px; border-top: 1px solid var(--line); }
-.project-heading { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 30px; margin-bottom: 28px; }
+/* Titles and subtitles use the full project width above the two-column body. */
+.project-heading { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; margin-bottom: 28px; }
 .project-heading .date { margin-top: 12px; }
 .project-heading h3 { font-size: 25px; }
 .project-heading > div > p:not(.date) { color: var(--muted); font-size: 14px; margin: 10px 0 0; }

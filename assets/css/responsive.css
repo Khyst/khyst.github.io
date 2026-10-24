@@ -4,7 +4,6 @@
   nav { gap: 16px; }
   .hero { gap: 40px; }
   .experience-grid { gap: 32px; }
-  .project-heading { grid-template-columns: 145px minmax(0, 1fr); gap: 24px; }
   .project-body { grid-template-columns: 1fr 1fr; gap: 24px; }
   .academic-grid { gap: 32px; }
 }
