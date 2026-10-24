@@ -36,7 +36,7 @@ nav { display: flex; flex-wrap: wrap; gap: 24px; font-size: 12px; }
 .research-grid article > p:last-child { font-size: 14px; color: var(--muted); }
 
 /* Experience & tools */
-.experience-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 65px; }
+.experience-grid { display: grid; grid-template-columns: minmax(0, 1fr); }
 .section-intro { font-size: 20px; margin-top: 0; }
 .timeline { border-left: 1px solid var(--line); padding-left: 28px; }
 .timeline article { padding-bottom: 28px; }
@@ -49,7 +49,7 @@ nav { display: flex; flex-wrap: wrap; gap: 24px; font-size: 12px; }
 /* Selected projects: each main project lives in _includes/projects/. */
 .project { padding: 38px 0 45px; border-top: 1px solid var(--line); }
 /* Titles and subtitles use the full project width above the two-column body. */
-.project-heading { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; margin-bottom: 28px; }
+.project-heading { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; padding-bottom: 22px; margin-bottom: 28px; border-bottom: 1px solid var(--line); }
 .project-heading .date { margin-top: 12px; }
 .project-heading h3 { font-size: 25px; }
 .project-heading > div > p:not(.date) { color: var(--muted); font-size: 14px; margin: 10px 0 0; }

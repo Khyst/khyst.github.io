@@ -3,7 +3,6 @@
   .site-header { padding: 18px 24px; }
   nav { gap: 16px; }
   .hero { gap: 40px; }
-  .experience-grid { gap: 32px; }
   .project-body { grid-template-columns: 1fr 1fr; gap: 24px; }
   .academic-grid { gap: 32px; }
 }
